@@ -28,6 +28,11 @@ def logging_configuration():
 
 ## Servicios para consultar estado del componente
 
+@app.route('/')
+def hello_world():
+    statement = 'Hello creditRiskAPI! by marbramen'
+    return statement
+
 @app.route('/version-check', methods=['GET'])
 def version_check():
     return f'current Version: {__current_version__} \n old version: {__old_version__}'
