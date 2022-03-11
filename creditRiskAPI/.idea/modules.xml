@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/credit-risk-API.iml" filepath="$PROJECT_DIR$/credit-risk-API.iml" />
+      <module fileurl="file://$PROJECT_DIR$/creditRiskAPI.iml" filepath="$PROJECT_DIR$/creditRiskAPI.iml" />
     </modules>
   </component>
 </project>
