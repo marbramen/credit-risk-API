@@ -5,10 +5,15 @@ import pandas as pd
 
 class CreditRiskAPI(object):
     def __init__(self):
-        pathModel = os.getenv('MODEL_LOCATION')
-        nameModel = os.getenv('NAME_MODEL')
-        pathFeatures = os.getenv('FEATURES_LOCATION')
-        nameFeatures = os.getenv('NAME_FEATURES')
+        # pathModel = os.getenv('MODEL_LOCATION')
+        # nameModel = os.getenv('NAME_MODEL')
+        # pathFeatures = os.getenv('FEATURES_LOCATION')
+        # nameFeatures = os.getenv('NAME_FEATURES')
+
+        pathModel = '../../trained-model'
+        nameModel = 'model_risk_RandomForestClassifier_withDataSet01.joblib'
+        pathFeatures = '../../../feature-set'
+        nameFeatures = 'feature_set.csv'
 
         self.numberFeatures = 5
         self.featuresL = ['nb_previous_loans',
