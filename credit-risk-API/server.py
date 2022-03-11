@@ -34,7 +34,7 @@ def version_check():
 
 @app.route('/health-check', methods=['GET'])
 def health_check():
-    return 'OK'
+    return 'OK =)'
 
 ## Servicios para consumir el componente
 
