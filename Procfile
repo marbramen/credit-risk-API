@@ -1,1 +1,1 @@
-web: gunicorn main:app 0.0.0.0:$PORT
+web: gunicorn --chdir ./creditRiskAPI  main:app 0.0.0.0:$PORT
