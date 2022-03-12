@@ -28,6 +28,12 @@ def logging_configuration():
 
 ## Servicios para consultar estado del componente
 
+@app.route('/')
+def welcome_credit_risk_Api():
+    statement = '<p> Credit Risk API by <b>ZajiCode</b> </p>'
+    return statement
+
+
 @app.route('/version-check', methods=['GET'])
 def version_check():
     return f'current Version: {__current_version__} \n old version: {__old_version__}'
