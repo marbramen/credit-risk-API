@@ -10,9 +10,9 @@ class CreditRiskAPI(object):
         # pathFeatures = os.getenv('FEATURES_LOCATION')
         # nameFeatures = os.getenv('NAME_FEATURES')
 
-        pathModel = '../../trained-model'
+        pathModel = os.path.dirname(__file__) + "/trained-model"
         nameModel = 'model_risk_RandomForestClassifier_withDataSet01.joblib'
-        pathFeatures = '../../../feature-set'
+        pathFeatures = os.path.dirname(__file__) + "/feature-set"
         nameFeatures = 'feature_set.csv'
 
         self.numberFeatures = 5
